@@ -1,185 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
+
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Archives: 2024 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2024/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+  <title>Hexo</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="
+      width=device-width, 
+      initial-scale=1.0, 
+      minimum-scale=1.0, 
+      maximum-scale=1.0,
+      user-scalable=no
+    " />
+  <link rel="icon" href="your logo path">
 
   
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<link rel="stylesheet" href="/css/main.css">
+
 
   
+<script src="/js/lib/jquery-3.6.3.min.js" defer></script>
+
+  
+  
+<script src="/js/lib/highlight.min.js" defer></script>
+
+  
+<script src="/js/main.js" type="module" defer></script>
+
+  
+<script src="/js/theme.js" type="module" defer></script>
+
+  
+<script src="/js/page/header.js" type="module" defer></script>
+
+  
+<script src="/js/page/side-menu.js" type="module" defer></script>
+
+  
+<script src="/js/page/search/index.js" defer></script>
+
+
+  
+  
+<script src="/js/lib/valine.min.js"></script>
+
+  
+  
+  
+
+  
+  
+<script src="/js/lib/busuanzi.pure.min.js" defer></script>
+
+  
+
+  
+  
+<script src="/js/page/search/local-search.js" type="module" defer></script>
+
   
 <meta name="generator" content="Hexo 7.3.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+<body style="position: relative;">
+  
+<div id="loading-box">
+  <div class="wave">
+    <div class="wave-child wave1"></div>
+    <div class="wave-child wave2"></div>
+    <div class="wave-child wave3"></div>
+    <div class="wave-child wave4"></div>
+    <div class="wave-child wave5"></div>
+  </div>
+</div>
+
+<script>
+  window.addEventListener("load", function() {
+    document.body.style.overflow = "auto";
+    document.getElementById("loading-box").classList.add("loaded")
+  }, false)
+</script>
+
+  <div class="bg-wrapper">
+  <canvas id="bg-canvas" />
+</div>
+  <div class="side-menu-container animate__animated animate__faster">
+  <ul class="menu animate__animated animate__faster">
+    <li class="menu-item"}><a href="/" title="Home">Home</a></li><li class="menu-item"}><a href="/project" title="Project">Project</a></li><li class="menu-item"}><a href="/message" title="Message">Message</a></li><li class="menu-item"}><a href="/friend-link" title="Link">Link</a></li><li class="menu-item"}><a href="/about" title="About">About</a></li>
+    <li class="category-menu-wrapper">
+      <div class="menu-item-name">
+        <span>Categories</span>
+        <span class="iconfont icon-chevron-bottom"></span>
       </div>
-    </div>
+      
+    </li>
+    <li class="iconfont icon-close-circle"></li>
+  </ul>
+</div>
+  
+<div class="search-pop-overlay">
+  <div class="popup search-popup">
+    
+    <div class="search-header">
+  <h2 class="search-title">
+    Local search
+    <i class="popup-btn-close iconfont icon-close"></i>
+  </h2>
+  <div class="search-input-container">
+    <input class="search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Please input keyword" spellcheck="false" type="search">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result flex flex-column">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>    
+  </div>
+</div>
+
+  <header class="main-header animate__animated animate__fadeInDown">
+  <a class="blogger-info flex flex-align-center" href="/">
+    <img src="your logo path" alt="avatar">
+    <span>Hexo </span>
+  </a>
+  <nav>
+    <ul class="menu flex flex-align-center">
+      <li class="menu-item"}><a href="/" title="Home">Home</a></li><li class="menu-item"}><a href="/project" title="Project">Project</a></li><li class="menu-item"}><a href="/message" title="Message">Message</a></li><li class="menu-item"}><a href="/friend-link" title="Link">Link</a></li><li class="menu-item"}><a href="/about" title="About">About</a></li>
+      <li class="menu-category">
+        <div class="flex flex-align-center">
+          <span>Categories</span>
+          <span class="iconfont icon-chevron-bottom"></span>
+        </div>
+        
+      </li>
+    </ul>
+  </nav>
+  <div class="right-icon flex flex-align-center">
+    <span class="search-popup-trigger iconfont icon-search"></span>
+    <span class="iconfont icon-view-list"></span>
   </div>
 </header>
-
-      <div class="outer">
-        <section id="main">
+<div class="header-slot"></div>
+  <main class="page-container">
+    <div class="page-home-container">
   
   
+<div class="page-header animate__animated animate__fadeInDown">
+  <div class="page-name">
     
-    
+  </div>
+</div>
+  
+  
+  <div class="post-list-wrapper animate__animated animate__fadeInUp">
+    <ul class="post-list">
       
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
+      <li class="post-card ">
+        <div class="post-cover-wrapper">
+          <a class="post-cover" style="background-image: url(/images/no-cover.png);" href="/2024/08/14/docker/">
+            <div class="overlay"></div>
+          </a>
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/08/14/hello-world/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-08-14T01:50:56.500Z" itemprop="datePublished">Aug 14</time>
-</a>
+        <div class="post-info">
+          <div class="top-box">
+            
+            <div class="uncategoried">Uncategorized</div>
+            
+            <a class="post-title" href="/2024/08/14/docker/">
+              Docker容器技术详解
+            </a>
+            <!-- <p class="post-desc">
+              Docker容器技术详解Docker是基于Go语言开发的开源应用容器引擎，遵从Apache Licence 2.0协议，可以让开发者打包应用以及应用的依赖包到一个可移植的容器中，然后发布到各种发行版...
+            </p> -->
+          </div>
+          <div class="bottom-box">
+            <div class="post-publish-time">
+              <span>08/14, 2024 </span>
+              <!-- <span class="iconfont icon-eye"> 1230</span> -->
+            </div>
+          </div>
+      </li>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/08/14/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2024/08/14/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
+      <li class="post-card ">
+        <div class="post-cover-wrapper">
+          <a class="post-cover" style="background-image: url(/images/no-cover.png);" href="/2024/08/14/hello-world/">
+            <div class="overlay"></div>
+          </a>
+        </div>
+        <div class="post-info">
+          <div class="top-box">
+            
+            <div class="uncategoried">Uncategorized</div>
+            
+            <a class="post-title" href="/2024/08/14/hello-world/">
+              Hello World
+            </a>
+            <!-- <p class="post-desc">
+              Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you ...
+            </p> -->
+          </div>
+          <div class="bottom-box">
+            <div class="post-publish-time">
+              <span>08/14, 2024 </span>
+              <!-- <span class="iconfont icon-eye"> 1230</span> -->
+            </div>
+          </div>
+      </li>
       
-      &copy; 2024 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
+    </ul>
+      
   </div>
+</div>
+
+
+<script src="/js/plugin/velocity.js" defer></script>
+
+
+<script src="/js/plugin/shutter.js" defer></script>
+
+
+<script src="/js/page/home.js" defer></script>
+
+    <div id="theme-btn" class="iconfont"></div>
+  </main>
+  <footer class="page-footer animate__animated animate__fadeIn">
+  
+  <p class="footer__desc">
+    My blog desc
+  </p>
+  <p class="copyright">Copyright © 2020-2024 John Doe </span>
+  <p>Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> & <a href="https://github.com/FE-Alog/hexo-theme-alog" title="Hexo-theme-alog" target="_blank" rel="noopener">Hexo-theme-alog</a> </p>
+  
 </footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
 </body>
+
+
+    <script>
+      window.CONFIG = {"search":{},"i18n":{"search":{"title":"Local search","result_title":"${resultNum} results found","placeholder":"Please input keyword","no_result":"No result","tips":"Start your search"}}};
+    </script>
+  
+
 </html>
